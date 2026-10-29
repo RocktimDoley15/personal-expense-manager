@@ -1,0 +1,203 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+.header {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #cbd5e1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.summary {
+    background: #0f766e;
+    color: white;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px #00000010;
+}
+
+.summary p {
+    margin-bottom: 10px;
+}
+
+.summary h2 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.form-section,
+.expenses-section {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px #00000008;
+}
+
+.form-section h2,
+.expenses-section h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    background: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #0f766e;
+    border-color: transparent;
+}
+
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+#submitBtn {
+    background: #0f766e;
+    color: white;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+#cancelBtn {
+    background: #64748b;
+    color: white;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 14px 10px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #f8fafc;
+    color: #475569;
+}
+
+.edit-btn {
+    background: #dbeafe;
+    color: #1d4ed8;
+    margin: 3px;
+}
+
+.delete-btn {
+    background: #fee2e2;
+    color: #b91c1c;
+    margin: 3px;
+}
+
+.clear-btn {
+    background: #dc2626;
+    color: white;
+    margin-top: 20px;
+}
+
+#emptyMessage {
+    color: #64748b;
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .container {
+        width: 94%;
+        margin: 18px auto;
+    }
+
+    .form-section,
+    .expenses-section {
+        padding: 16px;
+    }
+
+    th,
+    td {
+        padding: 10px 7px;
+        font-size: 13px;
+    }
+
+    .form-buttons {
+        flex-wrap: wrap;
+    }
+}
